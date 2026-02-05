@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio | C++ & Front-End</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="stars-container" id="stars"></div>
+
+    <nav>
+        <div class="logo">DEV.PORTFOLIO.🩵</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="YOUR_LINKEDIN_URL" target="_blank" class="nav-linkedin">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm a <span>Software Developer</span></h1>
+            <p>Mastering C++ Logic & Crafting Stunning Front-End Interfaces.</p>
+            <div class="btn-group">
+                <a href="https://linkedin.com/in/jana-mohamed-b90bb8384" target="_blank" class="btn btn-main">
+                    <i class="fab fa-linkedin"></i> Let's Connect
+                </a>
+                <a href="https://github.com/mjana6071-crypto" target="_blank" class="btn btn-outline">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-title">Technical <span>Expertise</span></h2>
+        <div class="grid-container">
+            <div class="card">
+                <i class="fas fa-code"></i>
+                <h3>C++ Programming</h3>
+                <p>Data Structures, OOP, and Algorithm Optimization for high-performance software.</p>
+            </div>
+            <div class="card">
+                <i class="fab fa-js-square"></i>
+                <h3>Front-End Dev</h3>
+                <p>Building responsive, pixel-perfect websites using HTML5, CSS3, and Modern JS.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-brain"></i>
+                <h3>Problem Solving</h3>
+                <p>Analyzing complex logic challenges and translating them into efficient code.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2 class="section-title">Current <span>Status</span></h2>
+        <div class="status-box">
+            <div class="badge">Active & Learning</div>
+            <h3>Developing Portfolio Projects</h3>
+            <p>I'm currently building a series of advanced projects. Follow my journey on LinkedIn or GitHub to see the latest updates!</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Developed with 🩵 by a C++ & Front-End Enthusiast</p>
+    </footer>
+
+    <script>
+        const starsContainer = document.getElementById('stars');
+        const count = 150;
+        for (let i = 0; i < count; i++) {
+            const star = document.createElement('div');
+            star.className = 'star';
+            const size = Math.random() * 2.5;
+            star.style.width = size + 'px';
+            star.style.height = size + 'px';
+            star.style.left = Math.random() * 100 + '%';
+            star.style.top = Math.random() * 100 + '%';
+            star.style.animationDuration = (Math.random() * 3 + 2) + 's';
+            star.style.animationDelay = Math.random() * 5 + 's';
+            starsContainer.appendChild(star);
+        }
+    </script>
+
+</body>
+</html>
